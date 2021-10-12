@@ -64,6 +64,18 @@ function tentativa(letra){
             desenhaBoneco();
         }
     }
+    verificaFimDeJogo();
+}
+
+function verificaFimDeJogo(){
+    if(!palavraInterface.innerHTML.includes("-")){
+        exibePalavraInterface("Você venceu!!");
+        window.removeEventListener("keypress", retornaLetra);
+    } else if(letrasErradasArray.length >= numTentativas) {
+        desenhaOlhos();
+        exibePalavraInterface("Você perdeu!!");
+        window.removeEventListener("keypress", retornaLetra);
+    }
 }
 
 function atualizaPalavraInterface(letra){

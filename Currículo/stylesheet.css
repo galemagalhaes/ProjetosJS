@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+div.perfil {
+  background-color: #84ddce;
+  text-align: center;
+}
+div.resumo {
+  background-color: #c1e2e6d8;
+  text-align: justify;
+}
+a.button {
+  color:aliceblue;
+  text-align: center;
+  border-radius:3px;
+  text-decoration: none;
+}
+img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+h2 {
+  color: blue;
+}
+
+hr {
+  background-color: gray;
+  height:3px;
+}
+#GITHUB {
+ background-color: rgb(123, 23, 218);
+}
+#LINKEDIN {
+  background-color: rgb(36, 36, 235);
+}

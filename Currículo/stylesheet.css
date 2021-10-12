@@ -1,3 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+}
+h2, p {
+  padding-top:10px;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -19,6 +32,7 @@ img {
   border-radius: 50%;
   width: 200px;
   height: 200px;
+  margin-top: 15px;;
 }
 h2 {
   color: blue;

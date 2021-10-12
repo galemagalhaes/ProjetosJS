@@ -11,9 +11,9 @@ const numTentativas = 7;
 const opacidadeOlhos = 0.3;
 
 const categorias = {
-    frutas: ["banana", "maçã", "mamão", "limão", "uva", "melancia", "cajú", "jaca", "melão", "abacaxi"],
-    profissões: ["engenheiro", "advogado", "médico", "professor", "pescador", "programador", "gamer", "confeiteiro"],
-    animais: ["leão", "galinha", "tubarão", "gaivota", "cachorro", "gato", "porco", "guaxinim"],
+    frutas: ["banana", "maça", "mamao", "limao", "uva", "melancia", "caju", "jaca", "melao", "abacaxi"],
+    profissões: ["engenheiro", "advogado", "medico", "professor", "pescador", "programador", "gamer", "confeiteiro"],
+    animais: ["leao", "galinha", "tubarao", "gaivota", "cachorro", "gato", "porco", "guaxinim"],
     cores: ["verde", "azul", "vermelho", "amarelo", "marrom", "preto", "branco"]
 };
 
@@ -58,7 +58,11 @@ function tentativa(letra){
     if(palavraProposta.includes(letra)){
         atualizaPalavraInterface(letra);
     } else {
-
+        letrasErradasArray.push(letra);
+        letrasErradas.innerHTML = "Letras erradas: " + letrasErradasArray;
+        if(partesBoneco.length > indiceBoneco){
+            desenhaBoneco();
+        }
     }
 }
 
